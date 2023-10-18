@@ -17,7 +17,7 @@ public class Consumatore extends Thread {
         while (true) {
             try {
                 int n = sharedbuffer.getValore();
-                if (n >= limiteInferiore && n <= limiteSuperiore) {
+                if(n >= limiteInferiore && n <= limiteSuperiore) {
                     this.valore = n;
                     System.out.println(nome + " ha acquisito " + valore + " dal buffer");
                 }
